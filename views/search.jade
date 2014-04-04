@@ -1,0 +1,8 @@
+.search
+	.jqm-search-panel(data-role="panel" data-position="right" data-display="overlay" data-theme="a")
+		.jqm-search
+			ul.jqm-list(data-filter-placeholder="Search" data-filter-reveal="true")
+				li(data-filtertext="homepage" data-icon="home"): a(href="/" data-ajax="false") Home
+				li(data-filtertext="videos"): a(href="/videos" data-ajax="false") Videos
+				li(data-filtertext="video"): a(href="/video" data-ajax="false") Video
+		.ui-btn.ui-mini.ui-btn-b.ui-icon-alert.ui-btn-icon-left.ui-shadow.ui-corner-all(data-icon="alert" data-theme="b" onClick="$.mobile.changePage('#confirmClear');") Clear Data

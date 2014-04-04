@@ -1,0 +1,17 @@
+extends layout
+
+block content
+	section(data-role='page' class="jqm-demos")
+		include header-form
+		include nav-form
+		.ui-content.jqm-content(data-role="content" role="main")
+			#categoryEntry
+				form(name="categoryForm" id="categoryForm")
+					label(for="catetoryTitle" class="cssRequired") Name
+					input(type="text" name="title" id="catetoryTitle" date-clear-btn="true")
+					label(for="catetoryDescription" class="cssRequired") Decription
+					textarea(cols="40" rows="6" name="catetoryDescription")
+			button(type="button" data-theme="a" data-icon="plus" id="categorySave") Save
+			button(type="button" data-theme="a" data-icon="minus" id="categoryCancel") Cancel
+		include info
+		include footer

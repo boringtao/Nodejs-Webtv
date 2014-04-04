@@ -1,0 +1,17 @@
+.nav-form
+	.jqm-navmenu-panel(data-role="panel" data-position="left" data-display="overlay" data-theme="a")
+		ul.jqm-list.ui-alt-icon.ui-nodisc-icon
+			li(data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false")
+				h3 Create
+				ul
+					li: a(href="/create/category" data-ajax="false") Create province
+					li: a(href="/form/station/create" data-ajax="false") Create station
+					li: a(href="/form/program/create" data-ajax="false") Create program
+					li: a(href="/form/episode/create" data-ajax="false") Create episode
+			li(data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false")
+				h3 Edit
+				ul
+					li: a(href="/form/category/edit" data-ajax="false") Edit province
+					li: a(href="/form/station/edit" data-ajax="false") Edit station
+					li: a(href="/form/program/edit" data-ajax="false") Edit program
+					li: a(href="/form/episode/edit" data-ajax="false") Edit episode

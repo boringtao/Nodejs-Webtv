@@ -1,0 +1,27 @@
+extends layout
+
+block content
+	section(data-role='page' class="jqm-demos jqm-home")
+		include header
+		.ui-content.jqm-content(role="main")
+			.player-wrap
+				div(style="display:none")
+				script(type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js")
+				object(id="myExperience3290220522001" class="BrightcoveExperience")
+					param(name="bgcolor" value="#FFFFFF")
+					param(name="width" value="480")
+					param(name="height" value="270")
+					param(name="autoStart" value="true")
+					param(name="playerID" value=playerID)
+					param(name="playerKey" value="AQ~~,AAAC_VGq6ik~,mb386bbzD1SBR8px7KI1BFSd8wAG5KpX")
+					param(name="isVid" value="true")
+					param(name="isUI" value="true")
+					param(name="dynamicStreaming" value="true")
+					param(name="@videoPlayer" value="3290220522001")
+				script(type="text/javascript"). 
+					brightcove.createExperiences()	
+			h1 The Flipside - Paul French
+			p In our new show - The Flipside, Paul French, the chief China strategist of the global market researchers, Mintel, shares his edgy insights into the Chinese retail market and gives the advice on what works and what doesn't for Chinese consumers.		
+		include nav
+		include search
+		include footer

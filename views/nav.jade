@@ -1,0 +1,23 @@
+.nav
+	.jqm-navmenu-panel(data-role="panel" data-position="left" data-display="overlay" data-theme="a")
+		ul.jqm-list.ui-alt-icon.ui-nodisc-icon
+			li(data-filtertext="homepage" data-icon="home"): a(href="/" data-ajax="false") Home
+			li(data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false")
+				h3 Category
+				ul
+					li(data-filtertext="category business"): a(href="/videos" data-ajax="false") Business
+					li(data-filtertext="category culture"): a(href="/#" data-ajax="false") Culture
+					li(data-filtertext="category art"): a(href="/#" data-ajax="false") Art
+			li(data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false")
+				h3 Province
+				ul
+					li(data-filtertext="province beijing"): a(href="/videos" data-ajax="false") Beijing
+					li(data-filtertext="province shanghai"): a(href="/videos" data-ajax="false") Shanghai
+					li(data-filtertext="province jiangxi"): a(href="/videos" data-ajax="false") Jiangxi
+			li(data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false")
+				h3 User
+				ul
+					li(data-filtertext="user login"): a(href="/videos" data-ajax="false") Login
+					li(data-filtertext="user register"): a(href="/videos" data-ajax="false") Register
+					li(data-filtertext="user playlist"): a(href="/videos" data-ajax="false") Playlist
+			li(data-filtertext="service" data-icon="bullets"): a(href="/service" data-ajax="false") Service

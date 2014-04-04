@@ -1,0 +1,35 @@
+extends layout
+
+block content
+	section(data-role='page' class="jqm-demos jqm-home")
+		include header
+		.ui-content.jqm-content(data-role="content" role="main")
+			.player-wrap
+				div(style="display:none")
+				script(type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js")
+				object(id="myExperience3290220522001" class="BrightcoveExperience")
+					param(name="bgcolor" value="#FFFFFF")
+					param(name="width" value="480")
+					param(name="height" value="270")
+					param(name="autoStart" value="true")
+					param(name="playerID" value=playerID)
+					param(name="playerKey" value="AQ~~,AAAC_VGq6ik~,mb386bbzD1SBR8px7KI1BFSd8wAG5KpX")
+					param(name="isVid" value="true")
+					param(name="isUI" value="true")
+					param(name="dynamicStreaming" value="true")
+					param(name="@videoPlayer" value="3290220522001")
+				script(type="text/javascript"). 
+					brightcove.createExperiences()
+			.about
+				h1 Propeller TV
+				p Propeller TV is the premium channel for the UK-China community. Watch us for business, culture and entertainment. We broadcast and produce high quality bi-lingual programmes and our mission is to build bridges that strengthen cultural exchange and economic development between the UK and China.
+		include nav
+		include search
+		include footer
+
+		div(data-role="dialog" id="confirmClear")
+			div(data-role="content")
+				p Are you sure you want to clear ALL data from both the server and local cache?
+				a(href="#" id="confirmClearYes" data-role="button" data-theme="b" data-rel="back") Yes
+				a(href="#" data-role="button" data-theme="c" data-rel="back") No
+
